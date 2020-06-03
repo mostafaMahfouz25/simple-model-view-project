@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteRule ^home$ index.php [L]
+RewriteRule ^categories$ categories.php [L]
+RewriteRule ^categories/([0-9]+)$ categories.php?id=$1 [L]
+
+
+RewriteRule ^posts$ posts.php [L]
+RewriteRule ^show-post$ posts.php [L]
+RewriteRule ^add-post$ posts.php [L]
+RewriteRule ^insert-post$ posts.php [L]
+
+RewriteRule ^posts/([0-9]+)$ posts.php?id=$1 [L]
+
+RewriteRule ^edit-post/([0-9]+)$ posts.php?id=$1 [L]
+RewriteRule ^update-post$ posts.php [L]
+
+RewriteRule ^delete-post/([0-9]+)$ posts.php?id=$1 [L]
